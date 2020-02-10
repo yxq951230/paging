@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>分页</title>
+    <link rel="stylesheet" href="style8.css" />
+</head>
+
+<body>
+<div class="goods-list-v2 g1-type-1 J-goods-list">
+    <ul class="gl-warp clearfix" id="gl-warp"></ul>
+</div>
+<div class="page clearfix" id="page">
+    <div class="p-wrap">
+        <span class="p-num">
+          <a href="#" class="pn-prev disabled" onclick="prevPage()">
+            <i> &lt;</i> <em id="shangyiye">上一页</em>
+          </a>
+          <a href="#" id="page1" onclick="loadData(1)" class="curr">1</a>
+          <a href="#" id="page2" onclick="loadData(2)">2</a>
+          <a href="#" id="page3" onclick="loadData(3)">3</a>
+          <a
+                  onclick="nextPage()"
+                  href="#"
+                  class="pn-next"
+                  title="使用方向键右键也可翻到下一页哦！"
+          >
+            <em>下一页</em>
+            <i>></i>
+          </a>
+        </span>
+        <span class="p-skip">
+          <em>
+            共
+            <b>3</b>
+            页&nbsp;&nbsp;到第
+          </em>
+          <input class="input-txt" id="pageNumInput" type="text" value="1" />
+          <em>页</em>
+          <a href="#" id="sure" class="btn btn-default" >确定</a>
+        </span>
+    </div>
+</div>
+<script src="script8.js"></script>
+</body>
+</html>
